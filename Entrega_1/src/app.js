@@ -19,7 +19,7 @@ app.use("/api/mocks", mocksRouter);
 
 mongoose
   .connect(
-    "mongodb+srv://mddecicco85:OP8eeeOJ0uSHNI4Z@cluster0.uh8jie7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+    "mongodb+srv://<user>:<password>@cluster0.uh8jie7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
   )
   .then(() => console.log("Conectado a la DB."))
   .catch((e) => console.log("Error al conectar con la DB: ", e));
